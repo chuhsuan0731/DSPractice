@@ -17,11 +17,11 @@ void dump_role(Role& role) {
     cout << "血量：   " << role.hp << endl;
     cout << "攻擊力： " << role.ap << endl;
     cout << "防禦力： " << role.dp << endl;
-    cout << "防禦力： " << role.sp << endl;
+    cout << "精神力： " << role.sp << endl;
 }
 
 void test_role() {
-    char name[] = "路人甲";
+    char name[] = "新手1";
 
     struct Role role;
 
