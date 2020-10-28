@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-	int i = 5;
+    int i = 5;
     int j = 6;
     int m,n,v;
     int ARRAY[30];
@@ -13,9 +13,8 @@ int main()
     void get(int i,int j)
     {
     	ARRAY[m*j+i];
-	}
-	
-	void set(int i,int j,int v)
+    }
+	set(int i,int j,int v)
 	{
 		ARRAY[m*j+i]=v;
 	}
