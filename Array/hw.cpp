@@ -26,7 +26,7 @@ void dump()
 		cout<<endl;
 	}
 		
-	cout<<"設定二維陣列第 2 列，第 2 行的元素值為 100 \n";	//i=2,j=2
+	cout<<"設定二維陣列第 2 列，第 2 行的元素值為 100 \n";	//i=2,j=2,ARRAY[10]
 	for(int i = 0; i <3; i++)
 	{
 		for(int j = 0; j < 4; j++)
