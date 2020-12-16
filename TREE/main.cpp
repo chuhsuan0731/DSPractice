@@ -19,12 +19,32 @@ void preorder(node *p)
 
 void ROOT(node *p)
 {
-  if(p) 
-  {
-    cout<<"-----------------\n";
-    cout<<"傳回TREE的根\n";
-    cout << p->data ;
-   }
+  node *root,*p1,*p2,*p4,*p5;
+  p1=new node;
+  p1->data='P';
+  root=p1;
+  p2=new node;
+  p2->data='t';  
+  p4=new node;
+  p4->data='D';
+  p5=new node;
+  p5->data='E';
+
+  p1->left=p2;
+  p1->right=NULL;
+  p2->left=p4;
+  p2->right=p5;
+  p4->left=NULL;
+  p4->right=NULL;
+  p5->left=NULL;
+  p5->right=NULL;
+  
+  cout<<" ---TREE--- \n";
+  preorder(root);
+  cout << endl;
+  cout<<"\n-----------------\n";
+  cout<<"傳回TREE的根\n";
+  cout <<p1->data<<endl;
 }
 
 void addChild()
@@ -113,31 +133,8 @@ void paste()
 
 int main()
 {
-  node *root,*p1,*p2,*p4,*p5;
-  p1=new node;
-  p1->data='P';
-  root=p1;
-  p2=new node;
-  p2->data='t';  
-  p4=new node;
-  p4->data='D';
-  p5=new node;
-  p5->data='E';
-
-  p1->left=p2;
-  p1->right=NULL;
-  p2->left=p4;
-  p2->right=p5;
-  p4->left=NULL;
-  p4->right=NULL;
-  p5->left=NULL;
-  p5->right=NULL;
-  
-  preorder(root);
-  cout << endl;
-  
-  ROOT(root);
-  cout << endl; 
+  ROOT();
+  cout<<endl;
   
   addChild();
   cout << endl;
@@ -147,5 +144,4 @@ int main()
   
   paste();
   return 0;
-  
 }
