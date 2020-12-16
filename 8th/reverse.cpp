@@ -2,8 +2,7 @@
 using std::cout;
 using std::endl;
 
-class LinkedList;    // 為了將class LinkedList設成class ListNode的friend,
-                     // 需要先宣告
+class LinkedList;    
 class ListNode
 {
 private:
@@ -92,23 +91,23 @@ void LinkedList::Reverse()  //反轉
 
 void reverse()
 {
-	  LinkedList list;     
+    LinkedList list;     
     list.Push_back(1);   
     list.Push_back(3);
-	  list.Push_back(4);   
+    list.Push_back(4);   
     list.Push_front(9);   
     list.Push_front(9); 
     list.Push_front(8);  
     list.PrintList(); 
     
-	  cout<<"反轉後\n" ;  
+    cout<<"反轉後\n" ;  
     list.Reverse();     //反轉 
     list.PrintList();   
 }
 
 void L ()
 {
-	LinkedList list;      
+    LinkedList list;      
     list.Push_back(9);   
     list.Push_back(7);   
     list.Push_back(5);  
@@ -119,16 +118,16 @@ void L ()
 
 void M ()
 {
-	  LinkedList list;   
+    LinkedList list;   
     list.Push_front(2);
     list.Push_front(3);
-	  list.Push_front(6);        
+    list.Push_front(6);        
     list.PrintList(); 
 }
 
 void merge()   //串列相加 
 {
-	  LinkedList list;      
+    LinkedList list;      
     list.Push_back(4);   
     list.Push_back(5);   
     list.Push_back(6);  
@@ -136,8 +135,8 @@ void merge()   //串列相加
     list.Push_back(9);
     list.Push_front(3);
     list.Push_front(2);
-	  list.Push_front(1);
-	  list.PrintList(); 
+    list.Push_front(1);
+    list.PrintList(); 
 }
 
 
