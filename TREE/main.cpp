@@ -19,7 +19,7 @@ void preorder(node *p)
   }
 }
 
-void ROOT(node *p)
+void ROOT()
 {
   node *root,*p1,*p2,*p4,*p5;
   p1=new node;
