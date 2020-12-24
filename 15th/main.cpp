@@ -70,7 +70,8 @@ void levelorder(Node *p)
 	  if (p->right!=NULL)
 	  {
 	    levelorder(p->right);
-    } 
+	  }
+
 }
 
 int main()
@@ -91,10 +92,10 @@ int main()
     root->right=NULL;
     root->data=v;    
     for(int i=1;i<n;i++)
-	{
-      cin >> v;
-      iNode=search(root,v);             
-      insert(iNode,v);                                      
+    {
+	    cin >> v;
+            iNode=search(root,v);             
+            insert(iNode,v);                                     
     }
     cout<<"前序: ";  
     preorder(root);
@@ -109,7 +110,7 @@ int main()
     levelorder(root);
     cout<<endl;
     
-	  system("pause");
+    system("pause");
     return 0;   
   }
   
