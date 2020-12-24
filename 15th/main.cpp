@@ -1,4 +1,7 @@
+//@TSENGCHUHSUAN  2020/12/24 @
+
 #include<iostream>
+#include<queue>
 #define MAX 10000
 using namespace std;
 
@@ -60,18 +63,17 @@ void postorder(Node *p)
   }
 }
 
-void levelorder(Node *p)
+void levelorder(Node *root)
 {
-    cout  << p->data <<" ";
-    if (p->left!=NULL) 
+    queue<Node *> q;
+    q.push(root);
+    while (!q.empty())
     {
-      levelorder(p->left);
+    	Node* p = q.front(); q.pop();
+    	if (p->left) q.push(p->left);
+    	if (p->right) q.push(p->right);
+	cout<< p->data<< " ";
     }
-	  if (p->right!=NULL)
-	  {
-	    levelorder(p->right);
-	  }
-
 }
 
 int main()
