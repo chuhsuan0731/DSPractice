@@ -1,14 +1,13 @@
 #include<iostream>
-#include<deque>
 #define MAX 10000
 using namespace std;
 
-typedef struct _node
+struct Node
 {
   int data;
-  struct _node *left;        
-  struct _node *right;      
-}Node;
+  struct Node *left;        
+  struct Node *right;      
+};
 
 void insert(Node *p,int d)
 {
