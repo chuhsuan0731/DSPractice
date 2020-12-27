@@ -9,7 +9,7 @@ class Queue{
 		int back;
 	public:
 		Queue(int size);
-		~Queue(); //(3)清空 
+		~Queue(); //(4)清空 
 		
 		int head();//(1)查看前端元素 
 		int tail();//(2)查看尾端元素
