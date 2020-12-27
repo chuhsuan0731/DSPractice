@@ -83,8 +83,8 @@ int main()
 		i++; 
 	}	
 	cout<<endl;
-    cout<<"\n印出第五層值 : "<<stack.peep(a[8]) ;
-    cout<<endl;
+        cout<<"\n印出第五層值 : "<<stack.peep(a[8]) ;
+        cout<<endl;
 	cout<<"最頂端的值為 : "<<stack.top();
 	cout<<endl;
 	
@@ -92,5 +92,8 @@ int main()
 	cout<<"\n----取出資料----\n";
 	if(!stack.isEmpty())
 		cout<<"將"<<i++<<"到"<<stack.pop()<<"取出\n"; 
+	
+        system("pause");
+        return 0; 
 			
 }
