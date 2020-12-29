@@ -89,6 +89,7 @@ void LinkedList::Reverse()  //反轉
 
 void reverse()
 {
+	cout<<"原式 : \n";
     LinkedList list;     
     list.Push_back(1);   
     list.Push_back(3);
@@ -98,7 +99,7 @@ void reverse()
     list.Push_front(8);  
     list.PrintList(); 
     
-    cout<<"反轉後\n" ;  
+    cout<<"反轉後 : \n" ;  
     list.Reverse();     //反轉 
     list.PrintList();   
 }
