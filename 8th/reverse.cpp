@@ -1,8 +1,6 @@
 #include <iostream>
-using std::cout;
-using std::endl;
-
-class LinkedList;    
+using namespace std;
+  
 class ListNode
 {
 private:
@@ -105,58 +103,11 @@ void reverse()
     list.PrintList();   
 }
 
-void L ()
-{
-    LinkedList list;      
-    list.Push_back(9);   
-    list.Push_back(7);   
-    list.Push_back(5);  
-    list.Push_back(4);   
-    list.Push_back(1);
-    list.PrintList(); 
-}
-
-void M ()
-{
-    LinkedList list;   
-    list.Push_front(2);
-    list.Push_front(3);
-    list.Push_front(6);        
-    list.PrintList(); 
-}
-
-void merge()   //串列相加 
-{
-    LinkedList list;      
-    list.Push_back(4);   
-    list.Push_back(5);   
-    list.Push_back(6);  
-    list.Push_back(7);   
-    list.Push_back(9);
-    list.Push_front(3);
-    list.Push_front(2);
-    list.Push_front(1);
-    list.PrintList(); 
-}
-
-
-
-
 int main() 
 {
 	cout<<"---LINKED LIST---　\n";
 	reverse();
 	cout<<endl;
-	
-	cout<<"L: ";
-	L();
-	cout<<"M: ";
-	M() ; 
-	cout<<"  ---合併後---　\n";
-	cout<<"L: ";
-	merge();
-	cout<<"M: ";
-	M();
-	
-  return 0;
+	system ("pause");
+        return 0;
 }
